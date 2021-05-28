@@ -3,7 +3,7 @@ Analyzing covid cases recorded in the USA.
 
 ### Columns in the Dataset
 
-| Colunm Name | Description | Type |
+| Column Name | Description | Type |
 | ----------- | ----------- | ---- |
 |cdc_case_earliest_dt | The earlier of the Clinical Date (date related to the illness or specimen collection) or the Date Received by CDC. Calculated date-- Cdc_case_earliest_dt uses the best available date from the set of dates related to illness/specimen collection and the set of dates related to when a case is reported. It is an option to end-users who need a date variable with optimized completeness. The logic of cdc_case_earliest_dt is to use the non-null date of one variable when the other is null and to use the earliest valid date when both dates are available. If no date available, then left blank. | Date & Time |
 | cdc_report_dt | Date case was first reported to the CDC. Calculated date-- Depreciated; CDC recommends researchers use cdc_case_earliest_dt in time series and other analyses. This date was populated using the date at which a case record was first submitted to the database. If missing, then the report date entered on the case report form was used. If missing, then the date at which the case first appeared in the database was used. If none available, then left blank. | Date & Time |
